@@ -3,13 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./index.css">
-    <script defer src="./index.js"></script>
+    <title>kodle</title>
+    <link rel="stylesheet" href="./wodle.css">
+    <script src="./wodle.js"></script>
 </head>
 <body>
-    <h1>마이웹2</h1>
-    <img src="../static/smile.png" alt="" width="500" height="500">
-    <img src="../static/star.png" alt="" width="500" height="500">
+    <div id="title">
+        <h1>KODLE</h1>
+        <p>입력칸에 한글을 영어자판으로 입력하세요</p>
+        <p class="correct">자리와 글자도 맞았어요</p>
+        <p class="present">글자가 맞았어요</p>
+        <p class="fail">글자를 포함하고 있지 않아요</p>
+
+    </div>
+    <div id="game">
+
+        <div id="board">
+            <div class="row">
+                <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+            </div>
+            <div class="row">
+                <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+            </div>
+            <div class="row">
+                <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+            </div>
+            <div class="row">
+                <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+            </div>
+            <div class="row">
+                <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+            </div>
+            <div class="row">
+                <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+            </div>
+        </div>
+
+        <form onsubmit="return inputText()">
+            <input type="text"/>
+            <input type="submit" value="입력">
+        </form>
+
+    </div>
 </body>
 </html>
